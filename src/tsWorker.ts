@@ -21,6 +21,8 @@ const ES6_LIB = {
 	CONTENTS: libes6ts
 };
 
+const DEFAULT_PREFS = {};
+
 export class TypeScriptWorker implements ts.LanguageServiceHost {
 
 	// --- model sync -----------------------
@@ -144,11 +146,11 @@ export class TypeScriptWorker implements ts.LanguageServiceHost {
 	}
 
 	getCompletionEntryDetails(fileName: string, position: number, entry: string): Promise<ts.CompletionEntryDetails> {
-		return Promise.as(this._languageService.getCompletionEntryDetails(fileName, position, entry, undefined, undefined));
+		return Promise.as(this._languageService.getCompletionEntryDetails(fileName, position, entry, undefined, undefined, DEFAULT_PREFS));
 	}
 
 	getSignatureHelpItems(fileName: string, position: number): Promise<ts.SignatureHelpItems> {
-		return Promise.as(this._languageService.getSignatureHelpItems(fileName, position));
+		return Promise.as(this._languageService.getSignatureHelpItems(fileName, position, DEFAULT_PREFS));
 	}
 
 	getQuickInfoAtPosition(fileName: string, position: number): Promise<ts.QuickInfo> {
