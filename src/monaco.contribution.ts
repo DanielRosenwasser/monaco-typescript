@@ -139,11 +139,11 @@ enum ModuleResolutionKind {
 //#endregion
 
 const typescriptDefaults = new LanguageServiceDefaultsImpl(
-	{ allowNonTsExtensions: true, target: ScriptTarget.Latest },
+	{ allowNonTsExtensions: true, target: ScriptTarget.ES5, module: ModuleKind.CommonJS },
 	{ noSemanticValidation: false, noSyntaxValidation: false });
 
 const javascriptDefaults = new LanguageServiceDefaultsImpl(
-	{ allowNonTsExtensions: true, allowJs: true, target: ScriptTarget.Latest },
+	{ allowNonTsExtensions: true, allowJs: true, target: ScriptTarget.ES5, module: ModuleKind.CommonJS },
 	{ noSemanticValidation: true, noSyntaxValidation: false });
 
 function getTypeScriptWorker(): monaco.Promise<any> {
