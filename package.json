@@ -28,7 +28,7 @@
     "natives": "^1.1.5",
     "object-assign": "^4.1.0",
     "rimraf": "^2.5.2",
-    "typescript": "3.1.1-insiders.20180926"
+    "typescript": "3.2.1-insiders.20181128"
   },
   "dependencies": {}
 }
