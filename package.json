@@ -29,7 +29,7 @@
     "natives": "^1.1.5",
     "object-assign": "^4.1.0",
     "rimraf": "^2.5.2",
-    "typescript": "3.2.1-insiders.20181128"
+    "typescript": "3.3.x"
   },
   "dependencies": {}
 }
