@@ -89,6 +89,7 @@ gulp.task('watch', ['compile'], function() {
 	gulp.watch(tsSources, ['compile-without-clean']);
 });
 
+gulp.task('configure-for-typescript-playground', ['import-typescript', 'release']);
 
 /**
  * Import files from TypeScript's dist

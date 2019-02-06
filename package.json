@@ -5,7 +5,8 @@
   "scripts": {
     "test": "node_modules/.bin/mocha",
     "watch": "node_modules/.bin/gulp watch",
-    "prepublish": "node_modules/.bin/gulp release"
+    "old-prepublish": "node_modules/.bin/gulp release",
+    "prepublish": "node_modules/.bin/gulp configure-for-typescript-playground"
   },
   "author": "Microsoft Corporation",
   "license": "MIT",
